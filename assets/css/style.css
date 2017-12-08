@@ -10,6 +10,11 @@ body {
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 /* general */
 
 .container {
@@ -98,8 +103,21 @@ nav a:first-child {
 
 /* footer */
 
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+
+.push,
+.footer {
+  height: 50px;
+}
+
 footer {
-  padding: 30px 0;
+  padding: 10px 0;
   clear: both;
   font-size: 12px;
   color: #fff;
@@ -242,4 +260,13 @@ input[type=submit] {
 
 .button-color {
   background-color: #4aaaa5;
+}
+
+/* Media Queries */
+
+@media screen and (max-width : 950px) {
+
+      .main-container {
+
+      }
 }
