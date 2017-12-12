@@ -264,15 +264,22 @@ input[type=submit] {
 /* 980, 768 , 640*/
 @media screen and (max-width : 980px) {
 
-      .main-container {
-        float: right;
-        width: 100%;
-        padding: 30px;
-        margin: 0 0 40px;
-        margin-left: 20px;
-        background: #fff;
-        border: 1px solid #ddd;
-      }
+  .main-section {
+      width: 100%;
+
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .sidebar h2 {
+    text-align: center;
+  }
+
+  #connect {
+    text-align: center;
+  }
 
 }
 
@@ -285,6 +292,47 @@ input[type=submit] {
 
     .sidebar {
       width: 100%;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+    }
+
+    #connect {
+      text-align: center;
+    }
+
+}
+
+@media screen and (max-width : 640px) {
+
+    .main-section {
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .sidebar {
+      width: 100%;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+    }
+
+    #connect {
+      text-align: center;
+    }
+
+    #logo {
+      width: 100%
+
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 25px;
+      float: none;
+      clear: both;
     }
 
 
