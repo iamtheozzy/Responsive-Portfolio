@@ -131,8 +131,7 @@ footer {
 
 .sidebar {
   float: right;
-  width: 100%;
-  max-width: 270px;
+  width: 270px;
   padding: 30px;
   margin-bottom: 20px;
   background: #fff;
@@ -166,8 +165,7 @@ h3,
 
 .main-section {
   float: left;
-  width: 100%;
-  max-width: 650px;
+  width: 70%;
   padding: 30px;
   margin: 0 0 40px;
   background: #fff;
@@ -263,10 +261,31 @@ input[type=submit] {
 }
 
 /* Media Queries */
-
-@media screen and (max-width : 950px) {
+/* 980, 768 , 640*/
+@media screen and (max-width : 980px) {
 
       .main-container {
-
+        float: right;
+        width: 100%;
+        padding: 30px;
+        margin: 0 0 40px;
+        margin-left: 20px;
+        background: #fff;
+        border: 1px solid #ddd;
       }
+
+}
+
+@media screen and (max-width : 768px) {
+
+    .main-section {
+        width: 100%;
+
+    }
+
+    .sidebar {
+      width: 100%;
+    }
+
+
 }
